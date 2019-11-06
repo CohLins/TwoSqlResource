@@ -58,13 +58,13 @@ public class JdbcContraller {
 
     }
 
-    @GetMapping("/test")
-    public String mapMybatis(Map<String,Object> map){
-        TbUserExample example = new TbUserExample();
-        List<TbUser> maps = tbUserMapper.selectByExample(example);
-        map.put("users",maps);
-        return "test";
-    }
+//    @GetMapping("/test")
+//    public String mapMybatis(Map<String,Object> map){
+//        TbUserExample example = new TbUserExample();
+//        List<TbUser> maps = tbUserMapper.selectByExample(example);
+//        map.put("users",maps);
+//        return "test";
+//    }
 
     @ResponseBody
     @GetMapping("/test2")
