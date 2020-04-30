@@ -1,12 +1,13 @@
-spring:
+first:
   datasource:
     password: root
     username: root
-    url: jdbc:mysql://localhost:3306/terrace?serverTimezone=UTC
+    jdbc-url: jdbc:mysql://localhost:3306/powerbusiness?serverTimezone=UTC&characterEncoding=UTF-8
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-mybatis:
-  # 指定全局配置文件位置
-  config-location: classpath:mybatis/mybatis-config.xml
-  # 指定sql映射文件位置
-  mapper-locations: classpath:mybatis/mapper/*.xml
+second:
+  datasource:
+    password: root
+    username: root
+    jdbc-url: jdbc:mysql://localhost:3306/drugs?serverTimezone=UTC&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
